@@ -3,7 +3,7 @@
 ### Background <br/>
 Challenge 1 introduced an intuitive, easy-to-use system for creating and calling a Machine Learning model. But before the images can be used to train a custom model, the image data needs preprocessing to make the images consistent and comparable.
 
-Challenge 2 will set the team up for success by creating a good quality dataset to use when building custom Machine Learning models later on. The Data Science team at AdventureWorks, with whom your team is working, can only move forward on this project when the data has been appropriately processed.
+Challenge 2 will set the team up for success by creating a good quality dataset to use when building custom Machine Learning models later on. The Data Science team at AdventureWorks, with whomu your team is working, can only move forward on this project when the data has been appropriately processed.
 
 The gear product catalog images AdventureWorks has provided are currently raw, unformatted pixel data. Before the images can be used to train a custom model, the data needs to be preprocessed to create new pixel data in a normalized, clean format, so that images are comparable within the dataset.
 
@@ -31,7 +31,7 @@ Perform the following:
 - Reshape, without stretching, to a 128x128x3 pixel array shape
 - Ensure for each image that the pixel range is from 0 to 255 (inclusive or [0, 255]) which is also called “contrast stretching”.
 Note: only one method is required
-- Save the data to disk in a format the team deems appropriate for easily reading back in (see Hints).
+- Save the data to disk in a format the team deems appropriate for easily reading back in (see [Hints](https://openhacks.azurewebsites.net/labs/player/microsoft-open-hack-ai#hints)).
 - Take into account when saving the data that it will be used for __Classification__.
 - Consider that  ```python numpy ```arrays are the common currency in Machine Learning frameworks
 
@@ -49,29 +49,29 @@ Normalize or equalize to ensure that the pixels are in a range from [0,255].
 
 __Read me first__
 
-- Is your data ready for data science? Doc
-- jupyter Ref
-- On using conda or pip to install Python packages Ref
+- Is your data ready for data science? [Doc](https://docs.microsoft.com/azure/machine-learning/studio/data-science-for-beginners-is-your-data-ready-for-data-science?wt.mc_id=OH-ML-ComputerVision)
+- ```anaconda jupyter ``` [Ref](https://jupyter.readthedocs.io/en/latest/running.html)
+- On using ```anaconda conda ``` or ```anaconda pip ``` to install Python packages [Ref](https://conda.io/docs/user-guide/tasks/manage-pkgs.html)
 
 __Useful Packages__
 
-- ``` python matplotlib ``` on dealing with images (I/O, plotting) Ref
-- ``` python numpy ``` for image manipulation/processing/visualization Ref
-- ``` python PIL  ``` Image module for I/O and more Ref
-- ``` pythonPIL  ``` ImageOps module which has the ability to flip, rotate, equalize and perform other operations. Ref
+- ``` python matplotlib ``` on dealing with images (I/O, plotting) [Ref](https://matplotlib.org/2.0.2/users/image_tutorial.html)
+- ``` python numpy ``` for image manipulation/processing/visualization [Ref](http://www.scipy-lectures.org/advanced/image_processing/)
+- ``` python PIL  ``` Image module for I/O and more [Ref](http://pillow.readthedocs.io/en/4.2.x/reference/Image.html)
+- ``` pythonPIL  ``` ImageOps module which has the ability to flip, rotate, equalize and perform other operations. [Ref](http://pillow.readthedocs.io/en/4.2.x/reference/ImageOps.html)
 
 __Concepts__
 
-- Feature scaling (normalization) Ref
+- Feature scaling (normalization) [Ref](https://en.wikipedia.org/wiki/Feature_scaling)
 
 __Code samples__
 
-- Pixel intensity normalization example Ref
+- Pixel intensity normalization example [Ref](https://stackoverflow.com/questions/7422204/intensity-normalization-of-image-using-pythonpil-speed-issues)
 
 ### Hints
 - It might be a good idea to encapsulate the image preprocessing into a function.
 - The ```anaconda numpy ```package is great for image manipulation
-- The ```anaconda numpy ``` package can be used for I/O as well (Ref) - quicker than ``` anaconda pandas ``` I/O
+- The ```anaconda numpy ``` package can be used for I/O as well ([Ref](https://docs.scipy.org/doc/numpy-1.13.0/reference/routines.io.html)) - quicker than ``` anaconda pandas ``` I/O
 - Some ways to “strech” the pixel range of an image include: pixel-intensity normalizing or equalizing the image histogram. Explore stackoverflow and PIL for some ideas.
 - In ```anaconda matplotlib ``` a pixel value of 0 for all channels appears black, 1 appears white, and 255 appears black.
 - In ```anaconda opencv ``` images are read in a BGR whereas ```anaconda matplotlib ``` reads and expects images as RGB. Conversion information can be found here

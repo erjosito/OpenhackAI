@@ -1,6 +1,6 @@
-### Challenge 3: Introduction to Custom Machine Learning
+## Challenge 3: Introduction to Custom Machine Learning
 
-#### Background
+### Background
 
 Challenge 2 set the team up for success by providing quality data. Challenge 3 will begin a journey into custom Machine Learning.
 
@@ -19,12 +19,12 @@ In this challenge, classical or traditional Machine Learning will be used. There
 - Is used in production systems
 - Algorithm variety
 
-#### Prerequisites
+### Prerequisites
 - Team has a setup for sharing code and working in Jupyter
 - Preprocessed Gear image data from Challenge 2
 - An installation of the Python package called ```scikit-learn ``` - check if it is installed and update it to the lastest or simply install (see [Hints](https://openhacks.azurewebsites.net/labs/player/microsoft-open-hack-ai#hints)).
 
-#### Challenge
+### Challenge
 One of the most popular and well-established Python ML packages, Scikit-Learn, is often the go-to package for starting out and is not uncommon in production systems. It has a simple, intuitive API (often modeled by other packages) and is a great place to start for learning, implementing and programming traditional ML and basic neural networks in Python.
 
 Use the team setup and team expertise to do the following tasks.
@@ -44,10 +44,10 @@ Perform the following as a team:
 - Evaluate the model with a confusion matrix to see how individual classes performed (use test data from the split)
 - Output the overall accuracy (use test data from the split)
 
-#### Success Criteria
+### Success Criteria
 - The team will run one code cell in a Jupyter notebook for the coach predicting the class successfully of a piece of gear in the provided URL above.
 - The team will run one code cell in a Jupyter notebook for the coach showing the accuracy score on the test data from the split. This score should be above 80%.
-#### References
+### References
 __Read me first__
 
 - ```scikit-learn``` algorithm cheatsheet [Ref](http://scikit-learn.org/stable/index.html)
@@ -60,6 +60,6 @@ __ML and Scikit-Learn__
 - ```scikit-learn``` Supervised Learning [Ref](http://scikit-learn.org/stable/tutorial/statistical_inference/supervised_learning.html)
 - ```scikit-learn``` General User Guide [Ref](http://scikit-learn.org/stable/user_guide.html)
 
-#### Hints
+### Hints
 - Install packages with ```pip install package_name``` if it is not installed and ```pip install --upgrade package_name``` if it needs to be updated to the latest version.
 - It can help to create an “image reader” function if not already built.
